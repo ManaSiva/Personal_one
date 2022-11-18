@@ -1,8 +1,9 @@
 :root{
-    --color-primary: #7300ff;
-    --color-black: #141d28;
-    --color-white: #e9e9e9;
+    --color-pink: #e346e9;
+    --color-black: #101924;
+    --color-siva: #e9e9e9;
     --color-black1: #212b38;
+    --text-color: red;
 }
 
 *
@@ -10,30 +11,36 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+  
 }
 
 body{
+
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .bar{
     display: flex;
     background-color: var(--color-black);
-    height: 80px;
+    height: 5rem;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     padding: 0 5%;
+    position: fixed;
 }
 
 .logo{
-    color: var(--color-white);
-    font-size: 30px;
+    color: var(--color-siva);
+    font-size: 2rem;
+    float: left;
 
 }
 
 .logo span{
-    color: var(--color-primary);
+    color: var(--color-pink);
+    font-size: 2rem;
 }
 
 .bar ul {
@@ -43,16 +50,27 @@ body{
 }
 
 .bar li{
-    padding: 10px 30px;
+    padding: 1rem 2rem;
 }
 
 .bar ul li a{
-    color: var(--color-white);
+    color: var(--color-siva);
     text-decoration: none;
 
     transition: all 0.3sec;
 }
 
 .bar ul li a:hover {
-    color: var(--color-primary);
+    color: var(--color-pink);
+
+}
+
+
+.para{
+    font-size: 1.3rem;
+    padding-left: 10%;
+    padding-right: 40%;
+}
+.para :nth-child(1){
+    padding-top: 40%;
 }
