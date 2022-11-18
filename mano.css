@@ -80,7 +80,7 @@ body{
     padding-bottom: 2rem ;
 }
 
-@media  (max-width: 380px) {
+@media  (max-width: 1070px) {
     .para {
         color: rgb(23, 23, 22);
         font-size: 1rem;
