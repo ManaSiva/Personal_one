@@ -17,7 +17,7 @@
 body{
 
     font-family: Arial, Helvetica, sans-serif;
-    
+    overflow: auto;
 }
 
 .bar{
@@ -71,10 +71,32 @@ body{
     padding-left: 15%;
     padding-right: 40%;
     text-align: left;
+    color: rgb(175, 39, 62);
 }
 .para :nth-child(1){
     padding-top: 6rem;
 }
 .para :nth-child(1n){
     padding-bottom: 2rem ;
+}
+
+@media  (max-width: 380px) {
+    .para {
+        color: rgb(23, 23, 22);
+        font-size: 1rem;
+        margin: 0 10%;
+        padding-left: 5%;
+        padding-right: 10%;
+    
+    }
+    .bar{
+        position: fixed;
+    }
+}
+
+@media (max-width: 100px){
+    .para{
+        display: none;
+    }
+    
 }
