@@ -1,102 +1,48 @@
 :root{
-    --color-pink: #e346e9;
-    --color-black: #101924;
-    --color-siva: #e9e9e9;
-    --color-black1: #212b38;
-    --text-color: red;
+    --background-color: rgb(16, 16, 16);
+    --text-color: white;
+    --links-color: rgb(26, 26, 250);
 }
 
-*
-{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    box-sizing: body-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
-body{
+div ul{
 
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: auto;
-}
-
-.bar{
     display: flex;
-    background-color: var(--color-black);
-    height: 5rem;
-    width: 100%;
-    align-items: center;
-    justify-content:space-around;
-    padding: 0 5%;
-    position: fixed;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 1rem ;
+    
+    
+}
+ul li{
+    list-style-type: none;
+    padding: 1.4rem;
 }
 
-.logo{
-    color: var(--color-siva);
-    font-size: 2rem;
-    float: left;
 
-}
-
-.logo span{
-    color: var(--color-pink);
-    font-size: 2rem;
-}
-
-.bar ul {
-    list-style: none;
-    display: flex;
-
-}
-
-.bar li{
-    padding: 1rem 2rem;
-}
-
-.bar ul li a{
-    color: var(--color-siva);
+div ul li a{
     text-decoration: none;
-
-    transition: all 0.3sec;
+    color: var(--text-color);
+}
+div ul li a:hover{
+    color: var(--links-color);
 }
 
-.bar ul li a:hover {
-    color: var(--color-pink);
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    align-items:center;
+    justify-items: center ;
 
 }
 
 
-.para{
-    font-size: 1.3rem;
-    padding-left: 15%;
-    padding-right: 40%;
-    text-align: left;
-    color: rgb(175, 39, 62);
-}
-.para :nth-child(1){
-    padding-top: 6rem;
-}
-.para :nth-child(1n){
-    padding-bottom: 2rem ;
-}
-
-@media  (max-width: 1070px) {
-    .para {
-        color: rgb(23, 23, 22);
-        font-size: 1rem;
-        margin: 0 10%;
-        padding-left: 5%;
-        padding-right: 10%;
-    
-    }
-    .bar{
-        position: fixed;
-    }
-}
-
-@media (max-width: 100px){
-    .para{
-        display: none;
-    }
-    
-}
