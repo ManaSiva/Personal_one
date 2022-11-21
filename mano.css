@@ -10,8 +10,10 @@
     box-sizing: body-box;
     margin: 0;
     padding: 0;
-    position: relative;
+    
 }
+
+
 
 div ul{
 
@@ -19,9 +21,9 @@ div ul{
     flex-wrap: wrap;
     justify-content: flex-end;
     padding-right: 1rem ;
-    
-    
+        
 }
+
 ul li{
     list-style-type: none;
     padding: 1.4rem;
@@ -34,15 +36,21 @@ div ul li a{
 }
 div ul li a:hover{
     color: var(--links-color);
-}
+} 
 
-.grid{
+ .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 20px;
-    align-items:center;
-    justify-items: center ;
+    gap: 10px 18px;
+    
+    grid-template-columns: 200px 200px ;
+    grid-template-rows: 200px 200px 200px;
+    place-content: center;
+    
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 
-}
+
+ }
+
 
 
